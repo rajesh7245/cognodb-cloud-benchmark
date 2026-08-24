@@ -1,0 +1,20 @@
+Memgraph Benchmark Results
+==========================
+Dataset: Wiki-Vote
+Nodes: 7115
+Relationships: 103689
+
+Traversal:
+1-hop p50: 148.636 ms, p95: 198.708 ms
+2-hop p50: 147.271 ms, p95: 161.373 ms
+3-hop p50: 147.275 ms, p95: 155.367 ms
+
+Point lookup: p50=146.769 ms, p95=151.711 ms
+Filtered lookup: p50=149.490 ms, p95=153.638 ms
+Aggregation: p50=146.076 ms, p95=147.369 ms
+
+Mixed read/write workload:
+Clients: 10
+Operations: 1000
+Time: 15.70 seconds
+Throughput: 63.68 operations/second

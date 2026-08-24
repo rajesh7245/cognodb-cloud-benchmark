@@ -78,3 +78,18 @@ python benchmark\cognodb_queries.py
 
 Benchmark credentials are stored in .env and should not be committed.
 The benchmark uses the same Wiki-Vote dataset and workload structure for comparison.
+
+### Memgraph
+
+| Workload | p50 | p95 |
+|---|---:|---:|
+| 1-hop traversal | 148.636 ms | 198.708 ms |
+| 2-hop traversal | 147.271 ms | 161.373 ms |
+| 3-hop traversal | 147.275 ms | 155.367 ms |
+| Point lookup | 146.769 ms | 151.711 ms |
+| Filtered lookup | 149.490 ms | 153.638 ms |
+| Aggregation | 146.076 ms | 147.369 ms |
+
+Mixed read/write workload: 10 clients, 1000 operations, 15.70 seconds, 63.68 operations/second.
+
+Memgraph dataset: 7,115 nodes and 103,689 relationships.
