@@ -1,0 +1,22 @@
+Neo4j Benchmark Results
+======================
+Dataset: Wiki-Vote
+Nodes: 7115
+Relationships: 103689
+Load time: 273.92 seconds
+Relationships/second: 378.53
+
+Traversal:
+1-hop p50: 102.469 ms, p95: 122.273 ms
+2-hop p50: 102.464 ms, p95: 138.746 ms
+3-hop p50: 102.405 ms, p95: 144.347 ms
+
+Point lookup: p50=102.357 ms, p95=104.512 ms
+Filtered lookup: p50=102.576 ms, p95=205.677 ms
+Aggregation: p50=102.619 ms, p95=205.006 ms
+
+Mixed read/write workload:
+Clients: 10
+Operations: 1000
+Time: 8.16 seconds
+Throughput: 122.51 operations/second

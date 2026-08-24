@@ -1,0 +1,20 @@
+CognoDB Benchmark Results
+=========================
+Dataset: Wiki-Vote
+Nodes: 7115
+Relationships: 103689
+
+Traversal:
+1-hop p50: 307.896 ms, p95: 409.606 ms
+2-hop p50: 307.464 ms, p95: 491.078 ms
+3-hop p50: 308.227 ms, p95: 620.458 ms
+
+Point lookup: p50=307.650 ms, p95=410.608 ms
+Filtered lookup: p50=307.442 ms, p95=411.327 ms
+Aggregation: p50=376.017 ms, p95=452.646 ms
+
+Mixed read/write workload:
+Clients: 10
+Operations: 1000
+Time: 35.89 seconds
+Throughput: 27.86 operations/second
