@@ -1,0 +1,21 @@
+FalkorDB Benchmark Results
+==========================
+
+Dataset: Wiki-Vote
+Nodes: 7115
+Relationships: 103689
+
+Traversal:
+1-hop p50: 17.012 ms, p95: 50.925 ms
+2-hop p50: 17.388 ms, p95: 19.185 ms
+3-hop p50: 17.049 ms, p95: 17.664 ms
+
+Point lookup: p50=16.828 ms, p95=85.482 ms
+Filtered lookup: p50=17.148 ms, p95=86.224 ms
+Aggregation: p50=102.817 ms, p95=204.899 ms
+
+Mixed read/write workload:
+Clients: 10
+Operations: 1000
+Time: 4.08 seconds
+Throughput: 245.33 operations/second
